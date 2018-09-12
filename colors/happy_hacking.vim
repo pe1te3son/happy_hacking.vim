@@ -131,11 +131,11 @@ call s:Color("Macro",    s:orange,   "NONE", s:t_orange,   "NONE")
 call s:Color("Function", s:yellow,   "NONE", s:t_yellow,   "NONE")
 call s:Color("Notice",   s:yellow,   "NONE", s:t_yellow,   "NONE")
 
-call s:Color("MatchParen", "NONE", "NONE", "NONE", "NONE", "bold")
+call s:Color("MatchParen", "NONE", "NONE", "NONE",  s:t_gray3, "bold")
 
 hi! link CursorLine   Cursor
 hi! link Identifier   Normal
-hi! link Constant     Normal
+hi! link Constant     Macro
 hi! link Operator     Normal
 hi! link Type         Keyword
 hi! link Statement    Keyword
@@ -215,7 +215,7 @@ hi! link htmlTagName        htmlTag
 hi! link htmlScriptTag      htmlTag
 
 " Javascript
-hi! link javaScriptBraces     Normal
+hi! link javaScriptBraces     Keyword
 hi! link javaScriptMember     Normal
 hi! link javaScriptIdentifier Keyword
 hi! link javaScriptFunction   Keyword
